@@ -6,7 +6,12 @@ class Player
 	end
 
 	def getMove
+
 		move = gets.chomp.to_i
+		 until (1..9).include?(move)
+			"Enter a space between 1-9"
+			move = gets.chomp.to_i
+		end
 		return move
 	end
 
