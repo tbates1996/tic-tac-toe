@@ -16,6 +16,11 @@ class Board
 		return @moves
 	end
 	def setMove(space, symbol)
+		while (@moves[space-1] == 'X' || @moves[space-1] == 'O')
+			puts "Enter a valid space"
+			space = gets.chomp.to_i
+		end
+		
 		@moves[space-1] = symbol
 	end
 
