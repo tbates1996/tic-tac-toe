@@ -1,0 +1,25 @@
+Documentation tic tac toe
+
+Classes
+Board
+	Array moves[9]
+	def printBoard
+
+Player
+	String symbol
+	def makeMove
+	def setPlayer
+
+Opponent < Player
+	Tree moves
+	def minimax
+
+Game
+	# int type
+	# def pickType
+	def win?
+	def init
+	def swapCurrentPlayer
+
+
+
